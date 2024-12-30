@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculator {
+    background-color: #4CAF50; /* Green color for calculator shape */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    padding: 20px;
+    height: 530px;
+  }
+  
+  .display {
+    margin-bottom: 30px;
+  }
+  
+  #display {
+    width: 100%;
+    height: 70px;
+    font-size: 32px;
+    text-align: right;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #dcdcdc;
+  }
+  
+  button:active {
+    background-color: #b5b5b5;
+  }
+  
+  .operator {
+    background-color: #f9a825;
+    color: white;
+  }
+  
+  .operator:hover {
+    background-color: #e68900;
+  }
+  
+  .equal {
+    background-color: #1e88e5;
+    color: white;
+    grid-column: span 1;
+    font-size: 12px; /* Slightly smaller font size */
+  }
+  
+  .equal:hover {
+    background-color: #1565c0;
+  }
+  
+  .clear {
+    background-color: #388e3c;
+    color: white;
+  }
+  
+  .clear:hover {
+    background-color: #2e7d32;
+  }
+  
+  .zero {
+    grid-column: span 1;
+  }
+  
+  .backspace {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .backspace:hover {
+    background-color: #e53935;
+  }
+  
+  @media (max-width: 600px) {
+    .calculator {
+      width: 90%;
+      height: 100px;
+    }
+  
+    #display {
+      font-size: 28px;
+    }
+  
+    button {
+      font-size: 22px;
+      padding: 15px;
+    }
+  }
+  
